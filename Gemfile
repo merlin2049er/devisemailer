@@ -45,5 +45,21 @@ group :development do
   gem 'spring'
   
   gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+  
+  gem 'font-awesome-sass', '~> 4.6.2'
+  gem 'bootstrap-sass-extras', '~> 0.0.7'
+  
+  gem 'devise', '~> 4.2'
+  
+  gem 'simple_form', '~> 3.2', '>= 3.2.1'
+  
 end
 
+
+group :production do
+  
+  gem 'rails_12factor'
+  
+  # poatgres
+  gem 'pg', '~> 0.18.4'
+end
