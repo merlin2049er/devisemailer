@@ -9,7 +9,6 @@
  by <a href="#">Start Bootstrap</a>
  </p>
  <hr>
- 
  <!-- Date/Time -->
  <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
  <hr>
@@ -91,3 +90,12 @@ ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
  </div>
  </div>
  </div>
+
+<!-- Side Widget Well -->
+ <div class="well">
+ <h4>Recent Posts</h4>
+   <% @articles.each do |a| %>
+   <strong><%= link_to a.title, a  %></strong>
+   <p></p><%= truncate(a.body) %></p>
+ <% end %>
+ </div
