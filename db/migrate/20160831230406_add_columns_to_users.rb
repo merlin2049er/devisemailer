@@ -3,6 +3,6 @@ class AddColumnsToUsers < ActiveRecord::Migration
     add_column :users, :admin, :boolean, default: false
     add_column :users, :firstname, :string
     add_column :users, :lastname, :string
-    add_column :users, :username, :string, default: "", null: false
+    # add_column :users, :username, :string, default: "", null: false
   end
 end
